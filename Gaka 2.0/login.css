@@ -1,0 +1,141 @@
+body { /* mudança do tamanho, cor e centralização da interface login */ 
+
+    padding: 0;
+
+    margin: 0;
+
+    background-color:#2c2b2b ;
+
+}
+
+#login { /*muda o estilo e tamanho das letras, e centraliza o 'login' */
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card { /* ajuste do tamanho e da cor da interface 'Login */
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 2px;
+
+    width:280px;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.card-header { /* estilo, tamanho e posição da escrita 'logar' */
+
+    padding-bottom: 50px;
+
+    opacity: 0.8;
+
+    color:black;
+
+}
+
+.card-header::after { /* ajuste do estilo e posição do traço embaixo da escrita 'logar' */
+
+    content: "";
+
+    width: 60px;
+
+    height: 1px;
+
+    background-color: black;
+
+    display: block;
+
+    margin-top: -17px;
+
+    margin-left: -5px;
+
+}
+
+.card-content label { /*cor das palavras 'usuario' e 'senha' */
+
+    color: red;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+}
+
+.card-content-area { /* ajuste da posição da area da senha */
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding:10px 0;
+
+}
+
+.card-content-area input { /*muda o stilo da caixa de inscrição da 'Senha' */
+
+    margin-top: 10px;
+
+    padding:0 5px;
+
+    background-color: transparent; /*trasparente e usado para melhorar a visibilidade, é mostrar que a caixa de inscrição senha esta sendo executada */
+
+    border:none;
+
+    border-bottom: 1px solid black; /*altera a cor da linha sobre onde a Senha será escrita */
+
+    outline: none;
+
+    color: black; /*cor da representação da Senha os 'pontinhos' */
+
+}
+
+.card-footer {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.card-footer .submit{ /*muda a cor e o tamanho do botão para logar */  
+
+    width: 100%;
+
+    height: 40px;
+
+    background-color: red; /* cor do botão logar */
+
+    border:none;
+
+    color:#e1e1e1; /* cor da escrita 'logar' */
+
+    margin: 10px 0; /* tamanho da margem */
+
+}
+
+.card-footer a { /*altera a cor e o estillo da mensagem para redefinir a Senha */
+
+    text-align: center;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+    color: black; /* cor */
+
+    text-decoration: none;
+
+}
